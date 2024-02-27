@@ -8,8 +8,10 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="image-container">
-    <!-- <img> -->
+  <div class="side-container">
+    <div class="image-container">
+      <!-- <img> -->
+    </div>
     <div class="logo-container"></div>
   </div>
   <div class="hero-container">
@@ -17,7 +19,21 @@
       <p>You know you want to.</p>
   </div>
   <div class="form-container">
-    
+    <form action="submit.php" method="post">
+      <div class="form-content">
+        <p>Let's do this!</p>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+      </div>
+      <div class="form-btn">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href=./login.html id="login">Log In</a></p>
+      </div>
+    </form>
   </div>
 </body>
 </html>
