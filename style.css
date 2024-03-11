@@ -68,6 +68,10 @@
   margin-top: auto;
 }
 
+.cta {
+  align-self: flex-start;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -76,6 +80,7 @@
   padding-top: 2rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
+  gap: 2rem;
 }
 
 .container {
