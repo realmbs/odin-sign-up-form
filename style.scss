@@ -12,6 +12,7 @@
   grid-template-columns: 40vw 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   min-height: 100vh;
+  background-color: rgba($color: #353535, $alpha: 0.25);
 }
 
 // sidebar
@@ -25,7 +26,7 @@
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .logo-container {
@@ -33,11 +34,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba($color: #353535, $alpha: 0.75);
+  background-color: rgba($color: #101010, $alpha: 0.75);
   width: 100%;
+  height: 100px;
 }
 
-.logo-container img, .logo-container p {
+
+.logo-container img {
   height: 80px;
   width: auto;
 }
@@ -48,25 +51,39 @@
   font-size: 2.5rem;
 }
 
+.img-credit {
+  color: white;
+  font-size: 0.75rem;
+}
+
 // main
 
 #main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  background-color: rgba($color: #353535, $alpha: 0.25);
+  align-items: flex-start;
+  padding-right: 5rem;
+  padding-left: 2rem;
+  margin-top: auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -87,6 +104,16 @@
   font-weight: bold;
   width: 200px;
   height: 40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: auto;
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
 
 .footer a {
